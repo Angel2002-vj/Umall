@@ -1,0 +1,768 @@
+.navbar{
+    width: 100%;
+    border-bottom: 0.5px solid  #616060;
+}
+.nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.menu-btn{
+    display: none;
+    padding-left:  15px;
+    font-size: 20px;
+    
+}
+.custom-button{
+    background: #3E56A2;
+    color: white;
+    padding: 5px 10px; 
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+
+}
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Transition for smooth icon rotation animation */
+  }
+  .menu-btn.close{
+    display: block;
+  }
+  .menu-btn.unclose{
+    display: none;
+  }
+  .menu-btn.open {
+   display: none; /* Rotate the icon when menu is open */
+  }
+  
+  .navlinks.open {
+    right: 0; /* Slide in from the right when menu is open */
+  }
+.home{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.about{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.navlinks{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.register-btn{
+    width: 15%
+}
+.banner-main{
+    width: 100%;
+    margin-top: 20px;
+}
+.banner-description-info{
+    background-image: url('C:\Users\cloud\Desktop\Umall\src\assets\banner.png');
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-end
+}
+.banner-description{
+    width: 55%;
+    background: #0000005C;
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px ;
+}
+.banner-head{
+    font-size: clamp(0.875rem, 0.3804rem + 2.8261vw, 2.5rem);
+    font-weight: 700;
+    color: #FFFFFF;
+
+}
+.banner-text{
+    width: 80%;
+    font-size: clamp(0.75rem, 0.6739rem + 0.4348vw, 1rem);
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+.learn-more-btn{
+    color:  #000000;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   padding-left: 30px;
+   line-height: 18px;
+   padding-right: 15px;
+}
+.heading{
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.shop-categories{
+    width: 80%;
+    margin: auto;
+}
+.category-card-main-info{
+    width: 100px;
+    display: grid;
+    grid-gap: 25px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* justify-items: center; */
+    overflow-y: hidden;
+    margin-bottom: 30px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   width: 100%; 
+   
+}
+.category-card-main{
+    width: 100%;
+}
+.category-card-image{
+    width: 100%;
+    border-radius: 100%;
+}
+.near-by-card-main{
+    width: 100%;
+    position: relative;
+   margin-top: 20px;
+}
+.near-by-card-image{
+    border-radius: 10px;
+     width: 100%;
+
+}
+.near-shop{
+    width: 80%;
+    margin: auto;
+}
+.near-by-card-image-shadow{
+    background-color: #000000;
+    opacity: 0.2;
+    position: absolute;
+    top: 1px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.near-by-card-description{
+   
+    bottom: 10px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.small-text{
+    font-size: 16px;
+    color: #FFFFFF ;
+}
+.big-text{
+    font-size: 25px;
+    color: #FFFFFF;
+
+}
+.extra-small-text{
+    font-size: 12;
+    color: #BCBCBC;
+
+}
+.about-section{
+    width: 80%;
+    margin: auto; 
+    margin-top: 40px;
+}
+.about-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-img{
+    width: 40%;
+  
+}
+.about-image{
+    border-radius: 10px;
+    width: 100%;
+}
+.about-description{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.about-head{
+    font-size: 20px;
+    font-weight: 600;
+}
+.about-description-info{
+    font-size: 14px;
+}
+
+
+.features-section{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+  
+}
+.story-section{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.img-section{
+    width: 45%;
+  
+}
+.image-secton2{
+    width: 45%; 
+    padding-top: 100px;
+}
+.story-section2{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.feature-image{
+    width: 100%;
+}
+.story-section-head{
+    font-size: 24px;
+    font-weight: 600;
+}
+.subscription-section{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.subscription-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0.5px 12px   #a8a8a8  ;
+    border-radius: 25px;
+    border: none;
+    padding: 20px 30px;
+   
+}
+.subcription-card-info{
+    width: 98%;
+    margin: auto;
+}
+.subscription-status{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+.subsrciptio-rate{
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding-bottom: 30px;
+}
+.price{
+    font-size: 30px;
+    font-weight: 900;
+ 
+}
+.month{
+    font-size: 20px;
+    font-weight: 500;
+}
+.subcription-points{
+    display: flex;
+    flex-direction: column;
+}
+.subcription-feature{
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+.subcription-feature-msg{
+    width: 150px;
+    padding-left: 10px;
+}
+.subscription-button{
+    background: #3E56A2;
+    color: #FFFFFF80;
+    padding: 5px 10px; 
+    border: none;
+    border-radius: 14px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer-section{
+    width: 100%;
+    background-color: #000000;
+}
+.footer-section-info{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.social-media-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.social-media-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 100%;
+
+}
+.logo-section{
+    width: 30%;
+}
+.link-section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+}
+.quik-link{
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 20px;
+}
+.about-link{
+    font-size: 20px;
+    font-weight: 400;
+ 
+}
+.contact-us{
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact-details-section{
+    width: 30%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 15px;
+}
+.footerlast-section{
+    width: 100%;
+    background-color: #000000;
+    border-top: 2px solid  #5F5F5F;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.powered-by-section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.powered-by{
+    font-size: 16px;
+    padding-left: 10px;
+    color:  #8E8E8E;
+}
+
+
+
+  
+ 
+.contact-form-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 0.5px 12px   #a8a8a8  ;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.contact-information-section{
+    width: 40%;
+    background-image: url('C:\Users\cloud\Desktop\Umall\src\assets\contactbg.png');
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+}
+.contact-information-section-info{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    color: white;
+}
+.contact-information-head{
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.contact-information-description{
+    font-size: 16px;
+    font-weight: 300;
+    color: #C9C9C9;
+}
+.contact-information{
+    font-size: 16px;
+    font-weight: 300; 
+    margin-top: 30px;
+    display: flex;
+}
+.social-media--links{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 80px;
+}
+.social-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 100%;
+}
+
+.contact-data{
+    padding-left: 10px;
+}
+
+
+.contact-form-main{
+    width:56% ;
+    padding-top: 50px;
+}
+.contact-form-details-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.small-input{
+    width: 45%;
+    padding-top: 30px;
+}
+.contact-form-address-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.first-name{
+    width: 100%;
+}
+.last-name{
+    width: 100%;
+}
+.email{
+    width: 100%;
+}
+.phone{
+    width: 100%;
+}
+.form-address{
+    width: 94%;
+}
+.save-btn{
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+  }
+.save--btn{
+    width: 200px;
+}
+@media(max-width:1232px){
+    .banner-description{
+        width: 60%;       
+        top: 30px;
+        right: 70px;
+        padding: 25px ;
+    }
+}
+@media(max-width:1200px){
+    .social-media-links{
+        width: 64%;
+    }
+}
+@media(max-width:1020px){
+    .learn-more-btn{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:1020px){
+    .banner-description{
+        width: 65%;       
+        bottom: 20px;
+        right: 30px;
+
+    }
+}
+
+
+@media(max-width:991px){
+    .home{
+      text-align: center;
+      padding-top: 15px;
+    }
+    .about{
+        text-align: center; 
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .nav-links{
+        width: 100%;
+    }
+    .navlinks {
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        z-index: 10px;
+        right: -250px;                                                                         /* Initially hidden off-screen */
+        width: 250px;                                                                         /* Adjust width as needed */
+        height: 100%;
+        background-color: #fff; /* Background color of the menu */
+        transition: right 0.3s ease; /* Transition for smooth sliding animation */
+        padding-top: 40px;
+      }
+    .navlinks.open{
+        z-index: 10px;
+         padding-top: 40px;
+      }
+    .menu-btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        z-index: 10px;
+    }
+   
+    .register-btn{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .custom-button{
+    width: 80%;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-description{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .features-section{
+      flex-direction: column; 
+     }
+     .story-section{
+        width: 100%;
+    }
+    .img-section{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .image-secton2{
+        width: 100%; 
+        padding-top: 50px;
+    }
+    .story-section2{
+        width: 100%;
+    }
+    .social-media-links{
+        width: 80%;
+    }
+  .subscription-card{
+    margin-top: 40px;
+  }
+}
+@media(max-width:864px){
+    .banner-description{
+        width: 90%; 
+        padding: 15px;
+    }
+    .banner-text{
+        margin-top: 5px;
+    }
+}
+@media(max-width:850px){
+    .contact-form-section{
+        flex-direction: column;
+    }
+    .contact-information-section{
+        width: 100%;
+        border-radius: 5px;
+    }
+   .contact-form-main{
+    width: 100%;
+   }
+}
+@media(max-width:780px){
+    .social-media-links{
+        width: 80%;
+    }
+}
+@media(max-width:750px){
+    .social-media-links{
+        width: 98%;
+    }
+}
+
+@media(max-width:600px){
+    .small-input{
+        width: 90%;
+    }
+    .form-address{
+        width: 82%;
+    }
+}
+@media(max-width:670px){
+    .about-img{
+        width: 100%;
+    }
+    .about-description{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .img-section{
+        width: 100%; 
+    }
+    .image-secton2{
+        width: 100%; 
+    }
+
+}
+@media(max-width:650px){ 
+    .footer-section-info{
+        flex-direction: column;
+    }
+    .logo-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-section{
+        width: 100%;
+    }
+    .contact-details-section{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-media-links{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    .save-btn{
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:550px){ 
+    .banner-description{
+        margin-left: 30px;
+    }
+    .powered-by-section{
+        flex-direction: column;
+    }
+    .powered-logo{
+        margin-top: 10px;
+    }
+    .powered-by{
+        padding-top: 10px;
+        /* padding-bottom: 20px; */
+    }
+    .footerlast-section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+   
+}
+@media(max-width:470px){
+    .social-media-links{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+ }
+ @media(max-width:470px){
+    .social-media-links{
+        width: 60%;
+        margin-bottom: 30px;
+    } 
+ }
+ @media(max-width:315px){
+    .social-media-links{
+        width: 68%;
+        margin-bottom: 30px;
+    } 
+ }
