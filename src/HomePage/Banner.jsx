@@ -1,7 +1,16 @@
 import React from 'react'
 
 const Banner = () => {
-
+//  const  body={
+//     shopid:15,
+//     userid:652
+//   }
+//   const fetchingFunction = async ( body) => {
+//     const { data } = await axios.post(`https://portal.umall.in/api/popular_products`, body)
+//     console.log(data)
+//     return data
+// }
+//   const {data,isLoading,isError,error}=useQuery({queryKey:['getProducts'],queryFn:()=>fetchingFunction(body)})
   return (
     <div className='banner-main'>
     <div className="banner-description-info">

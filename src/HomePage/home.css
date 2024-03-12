@@ -3,7 +3,7 @@
     border-bottom: 0.5px solid  #616060;
 }
 .nav{
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -144,7 +144,7 @@
     flex-direction: column;
    align-items: center;
    width: 100%; 
-   
+   padding-top: 15px;
 }
 .category-card-main{
     width: 100%;
@@ -152,6 +152,11 @@
 .category-card-image{
     width: 100%;
     border-radius: 100%;
+}
+.category-name{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
 }
 .near-by-card-main{
     width: 100%;
@@ -530,6 +535,117 @@
 .save--btn{
     width: 200px;
 }
+  /* registeration page */
+
+.register-main{
+    height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #3b3b3b;
+padding-top: 30px;
+padding-bottom: 35px;
+position: relative;
+}
+.error-text{
+    color: red;
+}
+.register-form-main{
+    width: 55%;
+    /* height: 500px; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.close-window{
+    color: #ffffff;
+    font-size: 20px;
+     position: absolute;
+     top: 20px;
+     right: 30px;
+}
+.register-image{
+    width: 45%;
+    height: 450px;
+    border-radius: 15px;
+}
+.reg-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+.register-form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* height: 450px; */
+    align-items: center;
+}
+.register-form-head{
+    font-size: 25px;
+    font-weight: 700;
+}
+.register-form-description{
+    text-align: center;
+    color: #000000B2;
+
+}
+/* .custom-input{
+    width: 100%;
+} */
+.form{
+    width: 100%;
+}
+.register-input{
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+}
+.input-field{
+    width: 100%;
+    height: 50px;
+    background: #F4F4F4;
+    border: none;
+    border-radius: 8px;
+    padding-left: 20px;
+}
+.register-textarea{
+    width: 100%;
+    margin-top: 10px;
+    height: 100px;
+}
+.text-field{
+    width: 100%;
+    height: 100px;
+    background: #F4F4F4;
+    border: none;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-bottom: 55px;
+    text-align: start;
+}
+.submit-button{
+    width: 100%;
+    margin-top: 20px;
+}
+.submit-btn{
+    width: 100%;
+    border: none;
+    background-color: #3E56A2;
+    color: #ffffff;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 @media(max-width:1232px){
     .banner-description{
         width: 60%;       
@@ -561,6 +677,21 @@
 
 
 @media(max-width:991px){
+    .register-main{
+        width: 100%;
+       height: auto;
+    }
+    .register-image{
+        width: 90%;
+    }
+    .register-form-main{
+       flex-direction: column;
+    }
+    .register-form{
+        width: 90%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .home{
       text-align: center;
       padding-top: 15px;
@@ -593,7 +724,7 @@
     .menu-btn{
         display: block;
         position: absolute;
-        top: 20px;
+        top: 25px;
         right: 40px;
     }
     .nav-links{
@@ -609,7 +740,7 @@
         justify-content: center;
     }
     .custom-button{
-    width: 80%;
+    width:100%;
     }
     .about-container{
         flex-direction: column;
@@ -684,7 +815,11 @@
     .form-address{
         width: 82%;
     }
+    .register-image{
+        height: 400px;
+    }
 }
+
 @media(max-width:670px){
     .about-img{
         width: 100%;
@@ -702,6 +837,9 @@
 
 }
 @media(max-width:650px){ 
+    .register-form-main{
+        width: 65%;
+    }
     .footer-section-info{
         flex-direction: column;
     }
@@ -729,6 +867,9 @@
     }
 }
 @media(max-width:550px){ 
+    .register-form-main{
+        width: 75%;
+    }
     .banner-description{
         margin-left: 30px;
     }
@@ -746,9 +887,16 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    .register-image{
+        height: 380px;
+    }
    
 }
 @media(max-width:470px){
+    .close-window{
+         top: 5px;
+         right: 8px;
+    }
     .social-media-links{
         width: 50%;
         margin-bottom: 30px;
@@ -759,10 +907,27 @@
         width: 60%;
         margin-bottom: 30px;
     } 
+    .register-form-main{
+        width: 90%;
+    }
+ }
+ @media(max-width:450px){
+    .menu-btn {
+        top: 25px;
+        right: 20px;
+ }
+}
+ @media(max-width:380px){
+    .register-image{
+        height: 320px;
+    }
  }
  @media(max-width:315px){
     .social-media-links{
         width: 68%;
         margin-bottom: 30px;
     } 
+    .register-form-main{
+        width: 90%;
+    }
  }
