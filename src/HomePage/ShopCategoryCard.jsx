@@ -1,6 +1,6 @@
 import React from 'react'
 import category from '../assets/categories.png'
-const ShopCategoryCard = () => {
+const ShopCategoryCard = ({name}) => {
   return (
     <div className='col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4'>
       <div className="card-info">
