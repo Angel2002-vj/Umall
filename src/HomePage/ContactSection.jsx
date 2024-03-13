@@ -2,6 +2,11 @@ import React from 'react'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { styled } from '@mui/material/styles';
+import ContactInput from './ContactInput';
+import { useForm } from 'react-hook-form'
+import ContactText from './ContactText';
+
+
 const ContactSection = () => {
     const ColorButton = styled(Button)(({ theme }) => ({
       
@@ -10,6 +15,12 @@ const ContactSection = () => {
           backgroundColor: '#3E56A2',
         },
       }));
+
+      const { register,handleSubmit,reset,formState: {errors}} = useForm()
+      function submit(data) {
+        console.log(data)
+        reset()
+      }
   return (
     <div className="contact-form-section">
     <div className="contact-information-section">
@@ -25,35 +36,53 @@ const ContactSection = () => {
             </div>
        </div>
     </div>
+    <form className='form' onSubmit={handleSubmit(submit)} noValidate>
     <div className="contact-form-main">
        <div className="contact-form-details-section">
       <div className="small-input">
-        <div className="first-name">
-        <TextField className='first-name' id="standard-basic" label="First Name" variant="standard" />
-        </div>
+        <ContactInput  placeholder="Name"
+                                type="text"
+                                register={register}
+                                name={"name"}/>
       </div>
       
       <div className="small-input">
-        <div className="last-name">
+        <ContactInput placeholder="Name"
+                                type="text"
+                                register={register}
+                                name={"name"} />
+        {/* <div className="last-name">
         <TextField className="last-name" id="standard-basic" label="Last Name" variant="standard" />
-      </div>
+      </div> */}
       </div>
       <div className="small-input">
-        <div className="email">
+      <ContactInput placeholder="Name"
+                                type="text"
+                                register={register}
+                                name={"name"}/>
+        {/* <div className="email">
         <TextField className="email" id="standard-basic" label="Email" variant="standard" />
-        </div>
+        </div> */}
       </div>
       <div className="small-input">
-        <div className="phone">
+      <ContactInput placeholder="Name"
+                                type="text"
+                                register={register}
+                                name={"name"}/>
+        {/* <div className="phone">
         <TextField  className="phone" id="standard-basic" label="Phone Number" variant="standard" />
-      </div>
+      </div> */}
       </div>
        </div>  
        <div className="contact-form-address-section">
-       <TextField className='form-address' id="standard-basic" label="Write your message.." variant="standard" />
+       <ContactText placeholder="Name"
+                                type="text"
+                                register={register}
+                                name={"name"}/>
        </div> 
        <div className="save-btn"> <ColorButton className="save--btn" variant="contained">Save</ColorButton></div>
-    </div>     
+    </div> 
+    </form>    
   </div>
   )
 }
