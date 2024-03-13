@@ -357,14 +357,14 @@
     margin-top: 25px;
 }
 .social-media-icon{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     background-color: #ffffff;
     color: #000000;
     border-radius: 100%;
-
+    font-size: 20px;
 }
 .logo-section{
     width: 30%;
@@ -476,13 +476,14 @@
     width: 80px;
 }
 .social-icon{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     background-color: #ffffff;
     color: #000000;
     border-radius: 100%;
+    font-size: 20px;
 }
 
 .contact-data{
