@@ -34,7 +34,7 @@ const NearByShop = () => {
        </div>
        <div>   <p>road : {add.road}</p>
             <p>city : {add.city}</p>
-            <p>country :{add.country}</p></div>
+        </div>
     </>
   )
 }
