@@ -7,8 +7,9 @@ import Subscription from '../HomePage/Subscription'
 import ContactSection from '../HomePage/ContactSection'
 // import axios from 'axios'
 // import { useQuery } from '@tanstack/react-query'
-import ShopCategories from '../HomePage/ShopCategories'
+
 import NearByShop from '../HomePage/NearByShop'
+import ShopCategorySlider from '../HomePage/ShopCategorySlider'
 const Home = () => {
 //  const  body={
 //     shopid:15,
@@ -25,10 +26,10 @@ return (
     <div>
       <Banner/>
     <div className='heading'>Shop Categories</div>  
-    <div className='shop-categories'>
-  
-      <ShopCategories/>
-    </div>
+      <div className='shop-categories'>
+    <ShopCategorySlider/>
+       </div>
+   
     <div className='heading'>Near by Shop</div> 
     <div className='near-shop'>
   

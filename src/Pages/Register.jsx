@@ -45,13 +45,27 @@ function Register() {
                                 </div>
                                 {errors.email?.message && ( <p className="error-text">{errors.email.message}</p> )}
                                 <div>
+                                <CustomInput  placeholder="Password"
+                                type="password"
+                                register={register}
+                                name={"password"}/>
+                                </div>
+                                {errors.password?.message && ( <p className="error-text">{errors.password.message}</p> )}
+                                <div>
+                                <CustomInput  placeholder="Confirm Password"
+                                type="password"
+                                register={register}
+                                name={"confirm_password"}/>
+                                </div>
+                                {errors.confirm_password?.message && ( <p className="error-text">{errors.confirm_password.message}</p> )}
+                                {/* <div>
                                 <CustomTextarea  placeholder="Address"
                                 type="text"
                                 register={register}
                                 name={"address"}/></div>
-                                {errors.address?.message && (<p className="error-text">{errors.address.message}</p> )}
+                                {errors.address?.message && (<p className="error-text">{errors.address.message}</p> )} */}
                                <div className='submit-button'>
-                                <button className='submit-btn'>Submit</button>
+                                <button className='submit-btn'>Register</button>
                                </div>
                         </form>
             </div>
