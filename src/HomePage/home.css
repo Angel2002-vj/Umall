@@ -3,7 +3,7 @@
     border-bottom: 0.5px solid  #616060;
 }
 .nav{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     display: none;
     padding-left:  15px;
     font-size: 20px;
-    
+    z-index: 12;
 }
 .custom-button{
     background: #3E56A2;
@@ -43,6 +43,8 @@
   }
   
   .navlinks.open {
+    
+    z-index: 20px;
     right: 0; /* Slide in from the right when menu is open */
   }
 .home{
@@ -117,7 +119,7 @@
    padding-right: 15px;
 }
 .heading{
-    width: 80%;
+    width: 90%;
     margin: auto;
     font-size: 25px;
     font-weight: 700;
@@ -125,8 +127,16 @@
     margin-bottom: 20px;
 }
 .shop-categories{
-    width: 80%;
+    width: 90%;
     margin: auto;
+}
+.slick-arrow.slick-prev{
+    background-color: #f3f1f1;
+    border-radius: 100%;
+}
+.slick-arrow.slick-next{
+    background-color: #f3f1f1;
+    border-radius: 100%;
 }
 .category-card-main-info{
     width: 100px;
@@ -154,35 +164,49 @@
     border-radius: 100%;
 }
 .category-name{
+    color: #333232;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.shop-name{
+    color: #c00f0f;
+    text-align: center;
+    font-size: 18px;
     font-weight: 500;
 }
 .near-by-card-main{
     width: 100%;
+    height: 400px;
     position: relative;
    margin-top: 20px;
+   /* padding-top: 25px;
+   padding-bottom: 25px; */
+   padding: 25px  20px;
 }
 .near-by-card-image{
     border-radius: 10px;
      width: 100%;
-
+     height: 100%;
 }
 .near-shop{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .near-by-card-image-shadow{
-    background-color: #000000;
-    opacity: 0.2;
+  background-image: linear-gradient(white, black);
+    opacity: 0.4;
     position: absolute;
-    top: 1px;
+    bottom: 0.2px;
+    left: 5px;
     height: 100%;
     width: 100%;
     border-radius: 10px;
 }
 .near-by-card-description{
-   
+    position: absolute;
+    bottom: 1px;
+    left: 5px;
     bottom: 10px;
     left: 15px;
     display: flex;
@@ -191,7 +215,9 @@
 
 }
 .small-text{
-    font-size: 16px;
+    padding-top: 10px;
+    font-size: clamp(0.75rem, 0.6686rem + 0.4651vw, 1.25rem);
+    font-weight: 500;
     color: #FFFFFF ;
 }
 .big-text{
@@ -205,7 +231,7 @@
 
 }
 .about-section{
-    width: 80%;
+    width: 90%;
     margin: auto; 
     margin-top: 40px;
 }
@@ -343,7 +369,7 @@
     background-color: #000000;
 }
 .footer-section-info{
-    width: 85%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -647,7 +673,58 @@ position: relative;
     font-weight: 600;
 }
 
+
+
+
+
+
+
+
+
+
+/* styles.css */
+.categories{
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  }
+  
+  .categories::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+  
+  .category-card {
+    width: 100%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+
+
+  @media(max-width:1616px){
+    .near-by-card-main{
+        height: 360px;
+    }
+  }
+
+  @media(max-width:1468px){
+    .near-by-card-main{
+        height: 320px;
+    }
+  }
+
 @media(max-width:1232px){
+    .near-by-card-main{
+        height: 290px;
+    }
     .banner-description{
         width: 60%;       
         top: 30px;
@@ -659,11 +736,17 @@ position: relative;
     .social-media-links{
         width: 64%;
     }
+    .near-by-card-main{
+        height: 280px;
+    }
 }
 @media(max-width:1020px){
     .learn-more-btn{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .near-by-card-main{
+        height: 260px;
     }
 }
 
@@ -678,6 +761,9 @@ position: relative;
 
 
 @media(max-width:991px){
+    .near-by-card-main{
+        height: 240px;
+    }
     .register-main{
         width: 100%;
        height: auto;
@@ -710,16 +796,16 @@ position: relative;
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        z-index: 10px;
         right: -250px;                                                                         /* Initially hidden off-screen */
         width: 250px;                                                                         /* Adjust width as needed */
         height: 100%;
         background-color: #fff; /* Background color of the menu */
         transition: right 0.3s ease; /* Transition for smooth sliding animation */
         padding-top: 40px;
+        z-index: 10;
       }
     .navlinks.open{
-        z-index: 10px;
+  
          padding-top: 40px;
       }
     .menu-btn{
@@ -731,7 +817,7 @@ position: relative;
     .nav-links{
         display: flex;
         flex-direction: column;
-        z-index: 10px;
+      
     }
    
     .register-btn{
@@ -777,7 +863,13 @@ position: relative;
     margin-top: 40px;
   }
 }
+@media(max-width:870px){
+.near-by-card-main{
+        height: 220px;
+    }
+}
 @media(max-width:864px){
+    
     .banner-description{
         width: 90%; 
         padding: 15px;
@@ -798,6 +890,11 @@ position: relative;
     width: 100%;
    }
 }
+@media(max-width:795px){
+    .near-by-card-main{
+        height: 200px;
+    }
+}
 @media(max-width:780px){
     .social-media-links{
         width: 80%;
@@ -808,7 +905,11 @@ position: relative;
         width: 98%;
     }
 }
-
+@media(max-width:720px){
+    .near-by-card-main{
+        height: 190px;
+    }
+}
 @media(max-width:600px){
     .small-input{
         width: 90%;
@@ -894,6 +995,9 @@ position: relative;
    
 }
 @media(max-width:470px){
+    .near-by-card-main{
+        height: 160px;
+    }
     .close-window{
          top: 5px;
          right: 8px;
@@ -918,10 +1022,16 @@ position: relative;
         right: 20px;
  }
 }
+@media(max-width:425px){
+.near-by-card-main{
+        height: 120px;
+    }
+}
  @media(max-width:380px){
     .register-image{
         height: 320px;
     }
+    
  }
  @media(max-width:315px){
     .social-media-links{
