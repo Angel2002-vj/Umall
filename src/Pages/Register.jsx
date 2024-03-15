@@ -83,7 +83,7 @@ function Register() {
                                 name={"address"}/></div>
                                 {errors.address?.message && (<p className="error-text">{errors.address.message}</p> )} */}
                                <div className='submit-button'>
-                                <button className='submit-btn'>  { isLoader ? <Loader/> : 'Submit'}</button>
+                                <button className='submit-btn'>Submit </button>
                                </div>
                         </form>
             </div>
