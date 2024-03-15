@@ -195,10 +195,10 @@
 }
 .near-by-card-image-shadow{
   background-image: linear-gradient(white, black);
-    opacity: 0.4;
+    opacity: 0.2;
     position: absolute;
     bottom: 0.2px;
-    left: 5px;
+    left: 0.2px;
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -207,8 +207,8 @@
     position: absolute;
     bottom: 1px;
     left: 5px;
-    bottom: 10px;
-    left: 15px;
+    bottom: 5px;
+    /* left: 15px; */
     display: flex;
     flex-direction: column;
     
