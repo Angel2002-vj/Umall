@@ -25,7 +25,7 @@ const Home = () => {
 return (
     <div>
       <Banner/>
-    <div className='heading'>Shop Categories</div>  
+    <div className='heading-first'>Shop Categories</div>  
       <div className='shop-categories'>
     <ShopCategorySlider/>
        </div>
@@ -44,7 +44,7 @@ return (
       <FeaturesSection/>
     </div> 
     <div className='heading'>Subscription</div>
-    <div className='about-section'>
+    <div className='subscription-main-section'>
       <Subscription/>
     </div>
     <div className='about-section'>

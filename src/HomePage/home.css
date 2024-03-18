@@ -1,6 +1,7 @@
 .navbar{
     width: 100%;
-    border-bottom: 0.5px solid  #616060;
+    border-bottom:0.5px solid #e6e4e4;
+    /* border: 0.5px solid #000000 */
 }
 .nav{
     width: 90%;
@@ -48,14 +49,14 @@
     right: 0; /* Slide in from the right when menu is open */
   }
 .home{
-    color: black;
-    font-weight: 600;
-    font-size: 20px;
+    color:#000000;
+    font-weight: 500;
+    font-size: 18px;
 }
 .about{
-    color: black;
-    font-weight: 600;
-    font-size: 20px;
+    color:#000000;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .navlinks{
@@ -73,7 +74,7 @@
 }
 .banner-main{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .banner-description-info{
     background-image: url('C:\Users\cloud\Desktop\Umall\src\assets\banner.png');
@@ -118,12 +119,22 @@
    line-height: 18px;
    padding-right: 15px;
 }
-.heading{
+.heading-first{
     width: 90%;
     margin: auto;
     font-size: 25px;
-    font-weight: 700;
-    margin-top: 30px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #151515 ;
+}
+.heading{
+    color: #151515 ;
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 70px;
     margin-bottom: 20px;
 }
 .shop-categories{
@@ -233,7 +244,12 @@
 .about-section{
     width: 90%;
     margin: auto; 
-    margin-top: 40px;
+    margin-top: 60px;
+}
+.subscription-main-section{
+    width: 90%;
+    margin: auto; 
+    margin-top: 30px;
 }
 .about-container{
     width: 100%;
@@ -255,11 +271,15 @@
     margin-bottom: 40px;
 }
 .about-head{
-    font-size: 20px;
+    color: #151515;
+    font-size: 24px;
     font-weight: 600;
 }
 .about-description-info{
-    font-size: 14px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #000000;
+
 }
 
 
@@ -298,14 +318,20 @@
     width: 100%;
 }
 .story-section-head{
+    color: #151515 ;
     font-size: 24px;
     font-weight: 600;
+}
+.subscription-section.row{
+    display: flex;
+    justify-content: space-between;
 }
 .subscription-section{
     width: 100%;
     margin-bottom: 100px;
 }
 .subscription-card{
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,7 +398,7 @@
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -393,10 +419,10 @@
     font-size: 20px;
 }
 .logo-section{
-    width: 30%;
+    width: 33%;
 }
 .link-section{
-    width: 30%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -419,7 +445,7 @@
     font-weight: 400;
 }
 .contact-details-section{
-    width: 30%;
+    width: 33%;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -433,8 +459,8 @@
     width: 100%;
     background-color: #000000;
     border-top: 2px solid  #5F5F5F;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .powered-by-section{
@@ -458,6 +484,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 2px 0.5px 12px   #a8a8a8  ;
     border-radius: 5px;
     border: none;
@@ -469,6 +496,9 @@
     background-image: url('C:\Users\cloud\Desktop\Umall\src\assets\contactbg.png');
     background-repeat: no-repeat; 
     background-size: 100% 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .contact-information-section-info{
     width: 85%;
@@ -477,6 +507,7 @@
     flex-direction: column;
     padding-top: 40px;
     color: white;
+ 
 }
 .contact-information-head{
     font-size: 24px;
@@ -519,7 +550,7 @@
 
 .contact-form-main{
     width:56% ;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 .contact-form-details-section{
     display: flex;
@@ -529,13 +560,13 @@
 }
 .small-input{
     width: 45%;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .contact-form-address-section{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 60px;
 }
 .first-name{
@@ -557,10 +588,17 @@
     width: 97%;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 .save--btn{
     width: 200px;
+    background-color: #3E56A2;
+    border-radius: 5px;
+    color:#FFFFFF;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
   /* registeration page */
 
@@ -761,6 +799,14 @@ position: relative;
 
 
 @media(max-width:991px){
+    .subscription-main-section{
+       
+        margin-top: 10px;
+    }
+    .heading{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
     .near-by-card-main{
         height: 240px;
     }
@@ -782,6 +828,7 @@ position: relative;
     .home{
       text-align: center;
       padding-top: 15px;
+      
     }
     .about{
         text-align: center; 
@@ -805,8 +852,7 @@ position: relative;
         z-index: 10;
       }
     .navlinks.open{
-  
-         padding-top: 40px;
+          padding-top: 40px;
       }
     .menu-btn{
         display: block;
@@ -860,7 +906,7 @@ position: relative;
         width: 80%;
     }
   .subscription-card{
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 @media(max-width:870px){
@@ -879,11 +925,19 @@ position: relative;
     }
 }
 @media(max-width:850px){
+    .save-btn{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .contact-information-section{
+      margin: auto;
+      margin-top: 10px;
+    }
     .contact-form-section{
         flex-direction: column;
     }
     .contact-information-section{
-        width: 100%;
+        width: 98%;
         border-radius: 5px;
     }
    .contact-form-main{
@@ -910,15 +964,27 @@ position: relative;
         height: 190px;
     }
 }
+@media(max-width:634px){
+    .subscription-card{
+        width: 100%;
+    }
+}
 @media(max-width:600px){
+    .contact-form-address-section{
+        width: 100%;
+    }
     .small-input{
         width: 90%;
     }
     .form-address{
-        width: 82%;
+        width: 90%;
     }
     .register-image{
         height: 400px;
+    }
+    .save--btn{
+        width: 90%;
+        justify-content: space-evenly;
     }
 }
 
@@ -986,8 +1052,8 @@ position: relative;
         /* padding-bottom: 20px; */
     }
     .footerlast-section{
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .register-image{
         height: 380px;
@@ -1031,7 +1097,9 @@ position: relative;
     .register-image{
         height: 320px;
     }
-    
+    .powered-by-section{
+        width: 100%;
+    }
  }
  @media(max-width:315px){
     .social-media-links{

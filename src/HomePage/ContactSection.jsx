@@ -163,7 +163,7 @@ const ContactSection = () => {
        <div className="contact-form-address-section">
        <TextField className='form-address' id="standard-basic" label="Write your message.." variant="standard" />
        </div> 
-       <div className="save-btn"> <ColorButton className="save--btn" variant="contained">Save</ColorButton></div>
+       <div className="save-btn"> <button className="save--btn" variant="contained">Send Message</button></div>
     </div>     
   </div>
   )
