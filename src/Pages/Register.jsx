@@ -8,7 +8,7 @@ import { useCustomUseMutation } from "../Hooks/useApiServices"
 import { customerRegister } from "../constants/urlEndPoint"
 import { useNavigate } from "react-router-dom"
 import { ToastContainer, toast } from "react-toastify"
-import Loader from '../Register/Loader'
+import {RiEyeLine} from 'react-icons/ri'
 function Register() {
   const {register,handleSubmit,reset,formState: { errors },} = useForm()
   const {
@@ -25,7 +25,7 @@ function Register() {
 
   const navigate = useNavigate()
   const [isLoader, setIsLoader] = useState(false)
-	// const [showPassword, setShowPassword] = useState(false)
+	const [showPassword, setShowPassword] = useState(false)
   return (
   <>
       <ToastContainer />
@@ -62,11 +62,12 @@ function Register() {
                                                 validateMessage={"Not a valid email address"}/>
                                 </div>
                                 {errors.email?.message && ( <p className="error-text">{errors.email.message}</p>)}
-                                <div>
+                                <div  style={{position:'relative'}}>
                                 <CustomInput  placeholder="Password"
-                                type="password"
-                                register={register}
-                                name={"password"}/>
+                                              type={showPassword ? 'text' : 'password'}
+                                              register={register}
+                                              name={"password"}/>
+                                	<RiEyeLine onClick={()=>setShowPassword(prev=>!prev)} style={{position:'absolute',top:'35%',right:'15px'}}/>
                                 </div>
                                 {errors.password?.message && ( <p className="error-text">{errors.password.message}</p> )}
                                 <div>
