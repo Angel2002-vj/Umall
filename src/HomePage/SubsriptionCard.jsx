@@ -3,7 +3,7 @@ import React from 'react'
 
 const SubsriptionCard = () => {
   return (
-    <div className='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12'>
+    <div className='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 subscription-card-main'>
       <div className='subscription-card'>
         <div className="subcription-card-info">
            <div className="subscription-status">Free</div>
