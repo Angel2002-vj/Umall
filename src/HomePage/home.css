@@ -4,7 +4,7 @@
     /* border: 0.5px solid #000000 */
 }
 .nav{
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -121,7 +121,7 @@
    padding-right: 15px;
 }
 .heading-first{
-    width: 90%;
+    width: 80%;
     margin: auto;
     font-size: 25px;
     font-weight: 600;
@@ -131,7 +131,7 @@
 }
 .heading{
     color: #151515 ;
-    width: 90%;
+    width: 80%;
     margin: auto;
     font-size: 25px;
     font-weight: 600;
@@ -139,7 +139,7 @@
     margin-bottom: 20px;
 }
 .shop-categories{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .slick-arrow.slick-prev{
@@ -202,7 +202,7 @@
      height: 100%;
 }
 .near-shop{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .near-by-card-image-shadow{
@@ -243,12 +243,12 @@
 
 }
 .about-section{
-    width: 90%;
+    width: 80%;
     margin: auto; 
     margin-top: 60px;
 }
 .subscription-main-section{
-    width: 96%;
+    width: 82%;
     margin: auto; 
     margin-top: 30px;
 }
@@ -337,7 +337,7 @@
     align-items: center;
 }
 .subscription-card{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,7 +401,7 @@
     background-color: #000000;
 }
 .footer-section-info{
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -426,6 +426,14 @@
 }
 .logo-section{
     width: 33%;
+}
+.umall-logo{
+   width: 120px;
+   height: 70px;
+}
+.umall--logo{
+    width: 100%;
+    height: 100%;
 }
 .link-section{
     width: 33%;
@@ -498,7 +506,7 @@
 }
 
 .contact-information-section{
-    width: 40%;
+    width: 35%;
     background-image: url('C:\Users\cloud\Desktop\Umall\src\assets\contactbg.png');
     background-repeat: no-repeat; 
     background-size: 100% 100%;
@@ -555,7 +563,7 @@
 
 
 .contact-form-main{
-    width:56% ;
+    width:60% ;
     /* padding-top: 50px; */
 }
 .contact-form-details-section{
@@ -809,7 +817,7 @@ position: relative;
       margin-top: 10px;
     }
     .heading{
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 0px;
     }
     .near-by-card-main{

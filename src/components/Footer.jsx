@@ -6,7 +6,7 @@ const Footer = () => {
     <div className='footer-section'>
       <div className="footer-section-info">
         <div className="logo-section">
-              <div className="umall-logo"><img src={logo} alt="" /></div>
+              <div className="umall-logo"><img src={logo} className='umall--logo' alt="" /></div>
               <div className="social-media-links">
                 <div className="social-media-icon"><i class="ri-instagram-line"></i></div>
                 <div className="social-media-icon"><i class="ri-facebook-circle-line"></i></div>
