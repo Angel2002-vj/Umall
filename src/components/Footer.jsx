@@ -22,9 +22,9 @@ const Footer = () => {
         </div>
         <div className="contact-details-section">
             <div className='contact-us'>Contact us</div>
-              <div className="contact">+1012 3456 789</div>
-              <div className="contact">demo@gmail.com</div>
-              <div className="contact">132 Dartmouth Street Boston, Massachusetts 02156 United States</div>
+              <div className="contact">9562488888</div>
+              <div className="contact">info.tigavision@gmail.com</div>
+              <div className="contact">Kunnathuvalappil Plaza, Anakkalu Avinissery Thrissur 680306</div>
         </div>
 
       </div>
