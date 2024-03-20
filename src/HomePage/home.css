@@ -305,7 +305,7 @@
 }
 .image-secton2{
     width: 45%; 
-    padding-top: 100px;
+    padding-top: 60px;
 }
 .story-section2{
     width: 45%;
@@ -313,7 +313,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 .feature-image{
     width: 100%;
@@ -323,6 +323,96 @@
     font-size: 24px;
     font-weight: 600;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subcription-name{
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.popup-container {
+    position: relative;
+  }
+  
+  .hover-element {
+    display: inline-block;
+  }
+  .popup-content {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;  
+  }
+  
+  .subcription-name:hover{
+     font-size: 18px;
+    font-weight: 600;
+  
+  }
+  .subcription-name:hover .popup-content {
+    display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .subscription-section.row{
     display: flex;
     justify-content: space-between;
@@ -335,26 +425,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
 }
 .subscription-card{
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     box-shadow: 2px 0.5px 12px   #a8a8a8  ;
     border-radius: 25px;
     border: none;
-    padding: 20px 30px;
-   
+    padding: 0px 30px;
+     height: 350px;
 }
 .subcription-card-info{
     width: 98%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 .subscription-status{
     font-size: 20px;
     font-weight: 700;
     color: #000000;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 .subsrciptio-rate{
     display: flex;
@@ -383,8 +482,10 @@
     
 }
 .subcription-feature-msg{
-    width: 150px;
-    padding-left: 10px;
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
 }
 .subscription-button{
     background: #3E56A2;
@@ -560,7 +661,9 @@
 .contact-data{
     padding-left: 10px;
 }
-
+.contact-form-info{
+    width: 100%;
+}
 
 .contact-form-main{
     width:60% ;
@@ -579,9 +682,14 @@
 .contact-form-address-section{
     width: 100%;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
     padding-top: 40px;
     padding-bottom: 60px;
+}
+.error-div{
+    width: 94%;
 }
 .first-name{
     width: 100%;
@@ -968,6 +1076,9 @@ position: relative;
     }
 }
 @media(max-width:750px){
+    .error-div{
+        width: 90%;
+    }
     .social-media-links{
         width: 98%;
     }
@@ -980,6 +1091,7 @@ position: relative;
 @media(max-width:634px){
     .subscription-card{
         width: 100%;
+        margin: 20px 20px;
     }
 }
 @media(max-width:600px){
