@@ -89,7 +89,7 @@ const ContactSection = () => {
       </div>
       <div className="small-input">
         <div className="phone">
-        <TextField  className="phone" id="standard-basic" label="Phone Number" variant="standard" placeholder='Phone Number' type='text' maxLength={'10'} name={'number'}  {...register('number',{
+        <TextField  className="phone" id="standard-basic" label="Phone Number" variant="standard" placeholder='Phone Number' type='number'   name={'number'}  {...register('number',{
         required: {
           value: true,
           message:'required *'
@@ -104,7 +104,7 @@ const ContactSection = () => {
       </div>
        </div>  
        <div className="contact-form-address-section">
-       <TextField className='form-address' id="standard-basic" label="Write your message.." variant="standard"  type='text' name={'message'} {...register('message',{
+       <TextField className='form-address' id="standard-basic" label="Write your message.." variant="standard"   type='text' name={'message'} {...register('message',{
         required: {
           value: true,
           message:'required *'
@@ -121,16 +121,13 @@ const ContactSection = () => {
   )
 
   async function handleMessage(data) {
-     
 
-    
-    
     setIsLoader(true)
     const body = {
-      name:data.firstname + ' ' + data.secondname,
-      email: data.email,
-      number: data.number,
-      message: data.message,
+      name: data.firstname + ' ' + data.secondname,
+      email:  data.email,
+      mobile:data.number,
+      msg: data.message,
     }
     console.log(body)
     try {

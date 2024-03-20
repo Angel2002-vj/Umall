@@ -22,7 +22,7 @@ const SubsriptionCard = ({name,amount}) => {
       <div className="popup-container">
         <div className="subcription-name">
          {name}
-          <div className="popup-content">{name}</div>
+          <p className="popup-content">{name}</p>
         </div>
        </div>
              {/* <div className='subcription-feature'><div className='subcription-feature-msg'>{name}</div></div> */}

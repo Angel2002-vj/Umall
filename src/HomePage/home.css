@@ -381,6 +381,7 @@
   }
   .popup-content {
     display: none;
+    z-index: 10;
     position: absolute;
     top: 20px;
     left: 0;
