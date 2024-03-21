@@ -76,7 +76,7 @@ const Subscription = () => {
     <Slider {...settings}>
       {isLoading ?<></>:
               isError ? <div className="empty">error {error.msg}</div>
-              : data?.plans?.map(plan => <SubscriptionCard key={plan.id} name={plan.name} amount={plan.amount} />)}
+              : data?.plans?.map(plan => <SubscriptionCard key={plan.id} name={plan.name} amount={plan.amount} details={plan.details}/>)}
     </Slider>
 
   )
