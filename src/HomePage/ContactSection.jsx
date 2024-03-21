@@ -147,6 +147,7 @@ const ContactSection = () => {
   function successMessageSend(data) {
     if (data?.data.sts === "01") {
       toast.success('message send successfully')
+      reset()
 		navigate("/")
     } else {
       throw new Error("something went wrong")

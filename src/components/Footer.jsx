@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/blacklogo.png'
+import logo from '../assets/Logowhite.png'
 import poweredlogo from '../assets/ere.png'
 const Footer = () => {
   return (
@@ -30,8 +30,8 @@ const Footer = () => {
       </div>
       <div className="footerlast-section">
          <div className="powered-by-section">
-            <div className='powered-logo'><img src={poweredlogo} alt="" /></div>
-            <div className='powered-by'>Powered by ERE Businesssolutions </div>
+            <div className='powered-logo'><img className='powered-image'  src={poweredlogo} alt="" /></div>
+            <div className='powered-by'>Powered by ERE Business Solutions</div>
          </div>
       </div>
     </div>

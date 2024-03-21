@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import   logo from '../assets/umalllogo.png'
+import   logo from '../assets/Logoblack.png'
 import CustomButton from './CustomButton'
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ const NavBar = () => {
     <div className='navbar'>
     <div className="nav">
       <div className='logo'>
-        <img src={logo} alt="Logo" />
+        <img className='logo--image' src={logo} alt="Logo" />
       </div>
       <div className={`navlinks ${isMenuOpen ? 'open' : ''}`}>
         <div className='nav-links'>
