@@ -83,7 +83,7 @@
 .banner-main{
     width: 100%;
     margin-top: 15px;
-    height: 70vh;
+    height: 72vh;
 }
 .banner-description-info{
     width: 100%;
@@ -422,7 +422,7 @@
     border-radius: 25px;
     border: none;
     padding: 0px 30px;
-     height: 350px;
+     /* height: 350px; */
 }
 .subcription-card-info{
     width: 98%;
@@ -457,6 +457,7 @@
 .subcription-points{
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 .subcription-feature{
     display: flex;
