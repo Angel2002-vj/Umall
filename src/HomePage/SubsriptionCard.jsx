@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const SubsriptionCard = ({name,amount}) => {
+const SubsriptionCard = ({name,amount,details}) => {
   function checkPlan() {
     if (amount > 0) {
       return 'Paid';
@@ -30,9 +30,9 @@ const SubsriptionCard = ({name,amount}) => {
         </div>
        </div>
              {/* <div className='subcription-feature'><div className='subcription-feature-msg'>{name}</div></div> */}
-             <div className='subcription-feature'> <div><i class="ri-checkbox-circle-fill"></i></div><div className='subcription-feature-msg'>details</div></div>
-             <div className='subcription-feature'> <div><i class="ri-checkbox-circle-fill"></i></div><div className='subcription-feature-msg'>details</div></div>
-              <div className='subcription-feature'> <div><i class="ri-checkbox-circle-fill"></i></div><div className='subcription-feature-msg'>details</div></div>
+             <div className='subcription-feature'> <div><i class="ri-checkbox-circle-fill"></i></div><div className='subcription-feature-msg'>{details}</div></div>
+             <div className='subcription-feature'> <div><i class="ri-checkbox-circle-fill"></i></div><div className='subcription-feature-msg'>{details}</div></div>
+              <div className='subcription-feature'> <div><i class="ri-checkbox-circle-fill"></i></div><div className='subcription-feature-msg'>{details}</div></div>
            </div>
            {/* <div className='subscription-btn'> <button className='subscription-button'>Already using</button></div> */}
         </div>   
