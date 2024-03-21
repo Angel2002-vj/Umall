@@ -9,6 +9,7 @@ import { customerRegister } from "../constants/urlEndPoint"
 import { useNavigate } from "react-router-dom"
 import { ToastContainer, toast } from "react-toastify"
 import {RiEyeLine} from 'react-icons/ri'
+import  {RiEyeOffLine} from 'react-icons/ri'
 function Register() {
   const {register,handleSubmit,reset,formState: { errors },} = useForm()
   const {
@@ -67,7 +68,9 @@ function Register() {
                                               type={showPassword ? 'text' : 'password'}
                                               register={register}
                                               name={"password"}/>
-                                	<RiEyeLine onClick={()=>setShowPassword(prev=>!prev)} style={{position:'absolute',top:'35%',right:'15px'}}/>
+                               {showPassword ? (
+                                 <RiEyeLine onClick={() => setShowPassword(prev => !prev)} style={{ position: 'absolute', top: '35%', right: '15px' }} />
+                                 ) : ( <RiEyeOffLine onClick={() => setShowPassword(prev => !prev)} style={{ position: 'absolute', top: '35%', right: '15px' }} />)}
                                 </div>
                                 {errors.password?.message && ( <p className="error-text">{errors.password.message}</p> )}
                                 <div>
