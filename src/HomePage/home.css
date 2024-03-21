@@ -1,3 +1,6 @@
+
+/* navbar */
+
 .navbar{
     width: 100%;
     border-bottom:0.5px solid #e6e4e4;
@@ -73,12 +76,19 @@
 .register-btn{
     width: 15%
 }
+
+
+/* banner */
+
 .banner-main{
     width: 100%;
     margin-top: 15px;
+    height: 70vh;
 }
 .banner-description-info{
-    background-image: url('C:\Users\cloud\Desktop\Umall\src\assets\banner.png');
+    width: 100%;
+    height: 100%;
+    background-image: url('C:\Users\cloud\Desktop\Umall\src\assets\bannernew.png');
     background-repeat: no-repeat; 
     background-size: 100% 100%;
     display: flex;
@@ -138,6 +148,8 @@
     margin-top: 70px;
     margin-bottom: 20px;
 }
+
+    /* shop categories */
 .shop-categories{
     width: 80%;
     margin: auto;
@@ -187,6 +199,7 @@
     font-size: 18px;
     font-weight: 500;
 }
+/* near by shops */
 .near-by-card-main{
     width: 100%;
     height: 400px;
@@ -235,17 +248,21 @@
 .big-text{
     font-size: 25px;
     color: #FFFFFF;
-
 }
 .extra-small-text{
     font-size: 12;
     color: #BCBCBC;
-
 }
+/* About Umall */
 .about-section{
     width: 80%;
     margin: auto; 
     margin-top: 60px;
+}
+.feature--section{
+    width: 80%;
+    margin: auto; 
+    margin-top: 40px;
 }
 .subscription-main-section{
     width: 82%;
@@ -269,7 +286,7 @@
     width: 55%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .about-head{
     color: #151515;
@@ -283,13 +300,12 @@
 
 }
 
-
+ /* Features */
 .features-section{
    width: 100%;
    display: flex;
    justify-content: space-between;
-   flex-wrap: wrap;
-  
+   flex-wrap: wrap; 
 }
 .story-section{
     width: 45%;
@@ -297,11 +313,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
 }
 .img-section{
     width: 45%;
-  
 }
 .image-secton2{
     width: 45%; 
@@ -324,42 +338,7 @@
     font-weight: 600;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* subscription */
 
 
 .subcription-name{
@@ -382,13 +361,17 @@
   .popup-content {
     display: none;
     z-index: 10;
-    position: absolute;
-    top: 20px;
+    position:absolute;
+    /* top: 20px; */
     left: 0;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 10px;  
+    padding: 10px; 
+     font-size: 14px;
+    font-weight: 400;
+    /* width: 100%; */
+  
   }
   
   .subcription-name:hover{
@@ -398,6 +381,7 @@
   }
   .subcription-name:hover .popup-content {
     display: block;
+    
     }
 
 
@@ -1186,6 +1170,12 @@ position: relative;
    
 }
 @media(max-width:470px){
+
+    .banner-main{
+     height: 55vh;
+    }
+
+
     .near-by-card-main{
         height: 160px;
     }

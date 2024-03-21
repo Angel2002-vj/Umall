@@ -1,5 +1,5 @@
 import React from 'react'
-import about from '../assets/aboutimg.png'
+import about from '../assets/ourstory.png'
 const FeaturesSection = () => {
   return (
     <div className='features-section'>

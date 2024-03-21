@@ -1,5 +1,5 @@
 import React from 'react'
-import about from '../assets/aboutimg.png'
+import about from '../assets/aboutnew.png'
 const AboutSection = () => {
   return (
     <div className='about-container'>
