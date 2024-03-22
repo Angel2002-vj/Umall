@@ -197,6 +197,11 @@
     border-radius: 100%;
 }
 .category-name{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+   
     color: #333232;
     text-align: center;
     font-size: 14px;
