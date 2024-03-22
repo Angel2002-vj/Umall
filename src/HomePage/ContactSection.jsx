@@ -51,16 +51,16 @@ const ContactSection = () => {
             </div>
        </div>
     </div>
- <form className="contact-form-main"  onSubmit={handleSubmit(handleMessage)}  noValidate>
-    <div className="contact-form-info">
-          <Box
+ {/* <form className="contact-form-main"  onSubmit={handleSubmit(handleMessage)}  noValidate> */}
+    <div className="contact-form-main">
+          <Box  onSubmit={handleSubmit(handleMessage)}  noValidate
           className="contact-form-info"
       component="form"
       sx={{
         '& > :not(style)': { m: 1, width: '25ch' },
         '& .MuiInputLabel-root': { fontSize: '15px' }, // Set the font size for label text
       }}
-      noValidate
+     
       autoComplete="off"
     >
        <div className="contact-form-details-section">
@@ -129,7 +129,7 @@ const ContactSection = () => {
        <div className="save-btn"> <button className="save--btn" variant="contained">Send Message</button></div>
      </Box>
     </div> 
-    </form>
+    {/* </form> */}
   </div>
   </>
   )
