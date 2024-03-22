@@ -1,7 +1,8 @@
 
-import React, { useState } from 'react'
+import React, { useState ,useEffect } from 'react'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import { useForm } from 'react-hook-form'
 import { useCustomUseMutation } from "../Hooks/useApiServices"
@@ -31,6 +32,8 @@ const ContactSection = () => {
       })
       const navigate = useNavigate()
       const [isLoader, setIsLoader] = useState(false)
+
+
   return (
     <>
       <ToastContainer />
@@ -50,11 +53,21 @@ const ContactSection = () => {
     </div>
  <form className="contact-form-main"  onSubmit={handleSubmit(handleMessage)}  noValidate>
     <div className="contact-form-info">
+          <Box
+          className="contact-form-info"
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+        '& .MuiInputLabel-root': { fontSize: '15px' }, // Set the font size for label text
+      }}
+      noValidate
+      autoComplete="off"
+    >
        <div className="contact-form-details-section">
-      
+   
       <div className="small-input">
         <div className="first-name">
-        <TextField className='first-name' id="standard-basic" label="First Name" variant="standard"   placeholder='First Name' type='text' name={'firstname'} {...register('firstname',{
+        <TextField className='first-name' id="standard-basic" label="First Name" variant="standard"    type='text' name={'firstname'} {...register('firstname',{
         required: {
           value: true,
           message:'required *'
@@ -66,7 +79,7 @@ const ContactSection = () => {
       
       <div className="small-input">
         <div className="last-name">
-        <TextField className="last-name" id="standard-basic" label="Last Name" variant="standard"  placeholder='Last Name' type='text' name={'secondname'} {...register('secondname',{
+        <TextField className="last-name" id="standard-basic" label="Last Name" variant="standard"  type='text' name={'secondname'} {...register('secondname',{
         required: {
           value: true,
           message:'required *'
@@ -77,7 +90,7 @@ const ContactSection = () => {
       </div>
       <div className="small-input">
         <div className="email">
-        <TextField className="email" id="standard-basic" label="Email" variant="standard" placeholder='Email' type='email' name={'email'} {...register('email',{
+        <TextField className="email" id="standard-basic" label="Email" variant="standard"  type='email' name={'email'} {...register('email',{
         required: {
           value: true,
           message:'required *'
@@ -89,7 +102,7 @@ const ContactSection = () => {
       </div>
       <div className="small-input">
         <div className="phone">
-        <TextField  className="phone" id="standard-basic" label="Phone Number" variant="standard" placeholder='Phone Number' type='number'   name={'number'}  {...register('number',{
+        <TextField  className="phone" id="standard-basic" label="Phone Number" variant="standard"  type='number'   name={'number'}  {...register('number',{
         required: {
           value: true,
           message:'required *'
@@ -111,9 +124,10 @@ const ContactSection = () => {
         }
       })}/>
       <div className='error-div'> {errors.message?.message && (<div className="error-text">{errors.message.message}</div> )}</div>
-       
+    
        </div>  
        <div className="save-btn"> <button className="save--btn" variant="contained">Send Message</button></div>
+     </Box>
     </div> 
     </form>
   </div>
@@ -148,6 +162,7 @@ const ContactSection = () => {
     if (data?.data.sts === "01") {
       toast.success('message send successfully')
       reset()
+
 		navigate("/")
     } else {
       throw new Error("something went wrong")
