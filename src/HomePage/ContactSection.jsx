@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import React, { useState ,useEffect } from 'react'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { styled } from '@mui/material/styles';
@@ -31,6 +31,15 @@ const ContactSection = () => {
       })
       const navigate = useNavigate()
       const [isLoader, setIsLoader] = useState(false)
+
+      useEffect(() => {
+        if (messageData && messageData.sts === '01') {
+            // If message sent successfully, refresh the page
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000); // Refresh after 3 seconds (adjust as needed)
+        }
+    }, [messageData]);
   return (
     <>
       <ToastContainer />
@@ -148,6 +157,7 @@ const ContactSection = () => {
     if (data?.data.sts === "01") {
       toast.success('message send successfully')
       reset()
+
 		navigate("/")
     } else {
       throw new Error("something went wrong")
