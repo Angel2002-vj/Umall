@@ -1270,11 +1270,17 @@ position: relative;
  }
 }
 @media(max-width:425px){
+    .banner-main{
+        height: 50vh;
+       }
 .near-by-card-main{
         height: 120px;
     }
 }
  @media(max-width:380px){
+    .banner-main{
+        height: 45vh;
+       }
     .register-image{
         height: 320px;
     }
@@ -1282,7 +1288,13 @@ position: relative;
         width: 100%;
     }
  }
+ @media(max-width:320px){
+     .banner-main{
+        height: 40vh;
+       }
+ }
  @media(max-width:315px){
+   
     .social-media-links{
         width: 68%;
         margin-bottom: 30px;
