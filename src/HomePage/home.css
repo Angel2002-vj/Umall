@@ -610,6 +610,7 @@
     border-radius: 5px;
     border: none;
     margin-bottom: 50px;
+  
 }
 
 .contact-information-section{
@@ -618,8 +619,9 @@
     background-repeat: no-repeat; 
     background-size: 100% 100%;
     margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+     height: 97%;
 }
 .contact-information-section-info{
     width: 85%;
