@@ -32,14 +32,7 @@ const ContactSection = () => {
       const navigate = useNavigate()
       const [isLoader, setIsLoader] = useState(false)
 
-      useEffect(() => {
-        if (messageData && messageData.sts === '01') {
-            // If message sent successfully, refresh the page
-            setTimeout(() => {
-                window.location.reload();
-            }, 1000); // Refresh after 3 seconds (adjust as needed)
-        }
-    }, [messageData]);
+
   return (
     <>
       <ToastContainer />
