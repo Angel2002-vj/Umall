@@ -54,7 +54,7 @@ const ContactSection = () => {
       
       <div className="small-input">
         <div className="first-name">
-        <TextField className='first-name' id="standard-basic" label="First Name" variant="standard"   placeholder='First Name' type='text' name={'firstname'} {...register('firstname',{
+        <TextField className='first-name' id="standard-basic" label="First Name" variant="standard"    type='text' name={'firstname'} {...register('firstname',{
         required: {
           value: true,
           message:'required *'
@@ -66,7 +66,7 @@ const ContactSection = () => {
       
       <div className="small-input">
         <div className="last-name">
-        <TextField className="last-name" id="standard-basic" label="Last Name" variant="standard"  placeholder='Last Name' type='text' name={'secondname'} {...register('secondname',{
+        <TextField className="last-name" id="standard-basic" label="Last Name" variant="standard"  type='text' name={'secondname'} {...register('secondname',{
         required: {
           value: true,
           message:'required *'
@@ -77,7 +77,7 @@ const ContactSection = () => {
       </div>
       <div className="small-input">
         <div className="email">
-        <TextField className="email" id="standard-basic" label="Email" variant="standard" placeholder='Email' type='email' name={'email'} {...register('email',{
+        <TextField className="email" id="standard-basic" label="Email" variant="standard"  type='email' name={'email'} {...register('email',{
         required: {
           value: true,
           message:'required *'
@@ -89,7 +89,7 @@ const ContactSection = () => {
       </div>
       <div className="small-input">
         <div className="phone">
-        <TextField  className="phone" id="standard-basic" label="Phone Number" variant="standard" placeholder='Phone Number' type='number'   name={'number'}  {...register('number',{
+        <TextField  className="phone" id="standard-basic" label="Phone Number" variant="standard"  type='number'   name={'number'}  {...register('number',{
         required: {
           value: true,
           message:'required *'
