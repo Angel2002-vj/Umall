@@ -2,6 +2,7 @@
 import React, { useState ,useEffect } from 'react'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import { useForm } from 'react-hook-form'
 import { useCustomUseMutation } from "../Hooks/useApiServices"
@@ -52,8 +53,18 @@ const ContactSection = () => {
     </div>
  <form className="contact-form-main"  onSubmit={handleSubmit(handleMessage)}  noValidate>
     <div className="contact-form-info">
+          <Box
+          className="contact-form-info"
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+        '& .MuiInputLabel-root': { fontSize: '15px' }, // Set the font size for label text
+      }}
+      noValidate
+      autoComplete="off"
+    >
        <div className="contact-form-details-section">
-      
+   
       <div className="small-input">
         <div className="first-name">
         <TextField className='first-name' id="standard-basic" label="First Name" variant="standard"    type='text' name={'firstname'} {...register('firstname',{
@@ -113,9 +124,10 @@ const ContactSection = () => {
         }
       })}/>
       <div className='error-div'> {errors.message?.message && (<div className="error-text">{errors.message.message}</div> )}</div>
-       
+    
        </div>  
        <div className="save-btn"> <button className="save--btn" variant="contained">Send Message</button></div>
+     </Box>
     </div> 
     </form>
   </div>

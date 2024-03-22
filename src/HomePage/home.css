@@ -674,14 +674,14 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100% !important;
 }
 .small-input{
     width: 45%;
     padding-top: 40px;
 }
 .contact-form-address-section{
-    width: 100%;
+    width: 100% !important;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -708,7 +708,7 @@
     width: 94%;
 }
 .save-btn{
-    width: 97%;
+    width: 97% !important;
     display: flex;
     justify-content: flex-end;
     padding-top: 20px;
