@@ -22,6 +22,15 @@ const NavBar = () => {
           <a href='#about' className='link-underline link-underline-opacity-0'>
             <div className='about' onClick={toggleMenu}>About</div>
           </a>
+          <a href='#shops' className='link-underline link-underline-opacity-0'>
+            <div className='about' onClick={toggleMenu}>Shops</div>
+          </a>
+          <a href='#category' className='link-underline link-underline-opacity-0'>
+            <div className='about' onClick={toggleMenu}>Categories</div>
+          </a>
+          <a href='#contact' className='link-underline link-underline-opacity-0'>
+            <div className='about' onClick={toggleMenu}>Contact Us</div>
+          </a>
         </div> 
         <div className='register-btn' >
         <Link to='register'> <CustomButton buttontext='Register' /></Link>

@@ -11,26 +11,26 @@ const Home = () => {
 return (
     <div>
       <Banner/>
-    <div className='heading-first'>Shop Categories</div>  
+    <div  id='category' className='heading-first'><div>Shop Categories</div> <div className='see-all'>view more</div></div>  
       <div className='shop-categories'>
          <ShopCategorySlider/>
        </div>
-    <div className='heading'>Near by Shop</div> 
+    <div id='shops' className='heading'><div> Near by Shop</div> <div className='see-all'>view more</div></div> 
     <div className='near-shop'>
       <NearByShop/>
     </div> 
     <div id='about' className='about-section'>
       <AboutSection/>
     </div>    
-    <div className='heading'>Features</div> 
+    <div  className='heading'>Features</div> 
     <div className='feature--section'>
       <FeaturesSection/>
     </div> 
-    <div className='heading'>Subscription</div>
+    <div className='heading'>Plans</div>
     <div className='subscription-main-section'>
       <Subscription/>
     </div>
-    <div className='about-section'>
+    <div id='contact' className='about-section'>
        <ContactSection/>
     </div>
    </div>

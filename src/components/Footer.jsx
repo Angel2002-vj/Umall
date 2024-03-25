@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/Logowhite.png'
-import poweredlogo from '../assets/ere.png'
+// import poweredlogo from '../assets/erewhite.png'
 const Footer = () => {
   return (
     <div className='footer-section'>
@@ -19,19 +19,21 @@ const Footer = () => {
              <div className="quik-link">Our Story</div>    
              <div className="quik-link">Our Mission</div> 
              <div className="quik-link">Our Vission</div>
+             <div className="quik-link">Usefull Links</div> 
+             <div className="quik-link">Recently Added Shops</div>
         </div>
         <div className="contact-details-section">
             <div className='contact-us'>Contact us</div>
               <div className="contact">9562488888</div>
               <div className="contact">info.tigavision@gmail.com</div>
-              <div className="contact">Kunnathuvalappil Plaza, Anakkalu Avinissery Thrissur 680306</div>
+              <div className="contact-address-info">Kunnathuvalappil Plaza, Anakkalu Avinissery Thrissur 680306</div>
         </div>
 
       </div>
       <div className="footerlast-section">
          <div className="powered-by-section">
-            <div className='powered-logo'><img className='powered-image'  src={poweredlogo} alt="" /></div>
-            <div className='powered-by'>Powered by ERE Business Solutions</div>
+            {/* <div className='powered-logo'> <img className='powered-image'  src={poweredlogo} alt="" /></div> */}
+            <div className='powered-by'> @ 2018 Designed  by ERE Business Solutions</div>
          </div>
       </div>
     </div>
