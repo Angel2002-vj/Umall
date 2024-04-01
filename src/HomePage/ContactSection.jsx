@@ -40,20 +40,20 @@ const ContactSection = () => {
     <div className="contact-form-section">
     <div className="contact-information-section">
         <div className="contact-information-section-info">
-            <div className="contact-information-head">Contact Information</div>
-            <div className="contact-information-description">Say something to start a live chat!</div>
-            <div className="contact-information"><div className="contact-icon"><i class="ri-phone-fill"></i></div><div className="contact-data">9562488888</div></div>
-            <div className="contact-information"><div className="contact-icon"><i class="ri-mail-fill"></i></div><div className="contact-data">info.tigavision@gmail.com</div></div>
-            <div className="contact-information"><div className="contact-icon"><i class="ri-map-pin-2-fill"></i></div><div className="contact-data">Kunnathuvalappil Plaza, Anakkalu Avinissery Thrissur 680306</div></div>
-            <div className='social-media--links'>
+            <div className="contact-information-heading"><div className="sm-line"></div> <div className="contact-information-head">CONTACT US</div></div>
+            {/* <div className="contact-information-description">Say something to start a live chat!</div> */}
+            <div className="contact-information"><div className="contact-icon"><i class="ri-phone-fill"></i></div><div className="contact-phone-data">9562488888</div></div>
+            <div className="contact-information"><div className="contact-icon"><i class="ri-mail-fill"></i></div><div className="contact-email-data">info.tigavision@gmail.com</div></div>
+            <div className="contact-information"><div className="contact-icon"><i class="ri-map-pin-line"></i></div><div className="contact-data">Kunnathuvalappil Plaza, Anakkalu Avinissery Thrissur 680306</div></div>
+            {/* <div className='social-media--links'>
                  <div className="social-icon"><i class="ri-instagram-line"></i></div>
                  <div className="social-icon"><i class="ri-facebook-circle-line"></i></div>
-            </div>
+            </div> */}
        </div>
     </div>
- {/* <form className="contact-form-main"  onSubmit={handleSubmit(handleMessage)}  noValidate> */}
-    <div className="contact-form-main">
-          <Box  onSubmit={handleSubmit(handleMessage)}  noValidate
+ <form className="contact-form-main"  onSubmit={handleSubmit(handleMessage)}  noValidate>
+    <div className="contact-form-info">
+          {/* <Box  onSubmit={handleSubmit(handleMessage)}  noValidate
           className="contact-form-info"
       component="form"
       sx={{
@@ -62,12 +62,12 @@ const ContactSection = () => {
       }}
      
       autoComplete="off"
-    >
+    > */}
        <div className="contact-form-details-section">
    
       <div className="small-input">
         <div className="first-name">
-        <TextField className='first-name' id="standard-basic" label="First Name" variant="standard"    type='text' name={'firstname'} {...register('firstname',{
+        <input className='first--name' id="standard-basic" placeholder="First Name" variant="standard"    type='text' name={'firstname'} {...register('firstname',{
         required: {
           value: true,
           message:'required *'
@@ -79,7 +79,7 @@ const ContactSection = () => {
       
       <div className="small-input">
         <div className="last-name">
-        <TextField className="last-name" id="standard-basic" label="Last Name" variant="standard"  type='text' name={'secondname'} {...register('secondname',{
+        <input className="last--name" id="standard-basic" placeholder="Last Name" variant="standard"  type='text' name={'secondname'} {...register('secondname',{
         required: {
           value: true,
           message:'required *'
@@ -90,7 +90,7 @@ const ContactSection = () => {
       </div>
       <div className="small-input">
         <div className="email">
-        <TextField className="email" id="standard-basic" label="Email" variant="standard"  type='email' name={'email'} {...register('email',{
+        <input className="email-feild" id="standard-basic" placeholder="Email" variant="standard"  type='email' name={'email'} {...register('email',{
         required: {
           value: true,
           message:'required *'
@@ -102,7 +102,7 @@ const ContactSection = () => {
       </div>
       <div className="small-input">
         <div className="phone">
-        <TextField  className="phone" id="standard-basic" label="Phone Number" variant="standard"  type='number'   name={'number'}  {...register('number',{
+        <input  className="phone-feild" id="standard-basic" placeholder="Phone Number" variant="standard"  type='number'   name={'number'}  {...register('number',{
         required: {
           value: true,
           message:'required *'
@@ -117,7 +117,7 @@ const ContactSection = () => {
       </div>
        </div>  
        <div className="contact-form-address-section">
-       <TextField className='form-address' id="standard-basic" label="Write your message.." variant="standard"   type='text' name={'message'} {...register('message',{
+       <input className='form-address' id="standard-basic" placeholder="Write your message.." variant="standard"   type='text' name={'message'} {...register('message',{
         required: {
           value: true,
           message:'required *'
@@ -127,9 +127,9 @@ const ContactSection = () => {
     
        </div>  
        <div className="save-btn"> <button className="save--btn" variant="contained">Send Message</button></div>
-     </Box>
+     {/* </Box> */}
     </div> 
-    {/* </form> */}
+    </form>
   </div>
   </>
   )

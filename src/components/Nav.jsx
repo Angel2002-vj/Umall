@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import   logo from '../assets/Logoblack.png'
 import CustomButton from './CustomButton'
-const NavBar = () => {
+const NavBar = ({AboutLink,ShopsLink,CategoryLink,ContactusLink}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -19,16 +19,16 @@ const NavBar = () => {
           <Link to='/' className='link-underline link-underline-opacity-0'>
             <div className='home' onClick={toggleMenu}>Home</div>
           </Link>
-          <a href='#about' className='link-underline link-underline-opacity-0'>
+          <a href={AboutLink} className='link-underline link-underline-opacity-0'>
             <div className='about' onClick={toggleMenu}>About</div>
           </a>
-          <a href='#shops' className='link-underline link-underline-opacity-0'>
+          <a href={ShopsLink} className='link-underline link-underline-opacity-0'>
             <div className='about' onClick={toggleMenu}>Shops</div>
           </a>
-          <a href='#category' className='link-underline link-underline-opacity-0'>
+          <a href={CategoryLink} className='link-underline link-underline-opacity-0'>
             <div className='about' onClick={toggleMenu}>Categories</div>
           </a>
-          <a href='#contact' className='link-underline link-underline-opacity-0'>
+          <a href={ContactusLink} className='link-underline link-underline-opacity-0'>
             <div className='about' onClick={toggleMenu}>Contact Us</div>
           </a>
         </div> 

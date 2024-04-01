@@ -12,7 +12,10 @@ function Layout(){
     return(
         <div className="home-main">
         
-           <NavBar/>
+           <NavBar AboutLink='#about'
+                   ShopsLink='#shops'
+                   CategoryLink='#category'
+                   ContactusLink='#contact'/>
             <Outlet/>
             <Footer/>
         </div>
