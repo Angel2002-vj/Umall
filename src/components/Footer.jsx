@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="footerlast-section">
          <div className="powered-by-section">
             {/* <div className='powered-logo'> <img className='powered-image'  src={poweredlogo} alt="" /></div> */}
-            <div className='powered-by'> @ 2018 Designed  by ERE Business Solutions</div>
+            <div className='powered-by'> © 2018 Designed  by ERE Business Solutions</div>
          </div>
       </div>
     </div>
